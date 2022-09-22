@@ -7,4 +7,3 @@
 ## ✍🏻 Author
 
 -   GitHub - [@jadetrue](https://github.com/jadetrue/)
-# jadetrue-website
