@@ -7,6 +7,10 @@ import { GetStaticProps } from "next";
 import Image from "next/image";
 import HomeSplash from "../components/HomeSplash";
 import { Body } from "../components/Typography";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import CTA from "../components/CTA";
+import Contact from "../components/Contact";
 
 export default function Home({
     allPostsData,
@@ -24,6 +28,10 @@ export default function Home({
                 <title>{siteTitle}</title>
             </Head>
             <HomeSplash />
+            <About />
+            <Skills />
+            <Contact />
+            {/* <CTA /> */}
             {/* <div className="flex space-x-4 space-y-4">
                 {allPostsData.map(({ id, date, title, imageUrl }) => (
                     <div key={id} className="flex flex-col">

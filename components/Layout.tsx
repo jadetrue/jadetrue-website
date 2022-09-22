@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
+import Footer from "./Footer";
 import { Navigation } from "./Navigation";
-import { Header } from "./Typography/index";
+import { Body } from "./Typography";
 
 const name = "Jade True";
 export const siteTitle = "Jade True | Frontend developer";
@@ -11,13 +11,31 @@ export default function Layout({
     children,
     home,
 }: {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     home?: boolean;
 }) {
     return (
-        <div className="w-full max-w-5xl m-auto md:h-screen">
+        <div className="w-full max-w-5xl px-8 m-auto md:h-screen">
             <Head>
                 <link rel="icon" href="/favicon.ico" />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="180x180"
+                    href="/apple-touch-icon.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                    href="/favicon-32x32.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="16x16"
+                    href="/favicon-16x16.png"
+                />
+                <link rel="manifest" href="/site.webmanifest" />
                 {/* TODO: Add meta description */}
                 <meta name="description" content="" />
                 <meta
@@ -37,33 +55,27 @@ export default function Layout({
                     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans&display=swap"
                     rel="stylesheet"
                 ></link>
+                <script
+                    src="https://kit.fontawesome.com/00cc1a91ac.js"
+                    crossOrigin="anonymous"
+                ></script>
             </Head>
             <header>
                 <Navigation name={name} />
-                {home ? (
-                    <>
-                        <Header size="large" styles="tracking-wider py-2">
-                            Hey, I'm Jade
-                        </Header>
-                    </>
-                ) : (
-                    <>
-                        <h2>
-                            <Link href="/">
-                                <a>{name}</a>
-                            </Link>
-                        </h2>
-                    </>
-                )}
             </header>
             <main>{children}</main>
             {!home && (
-                <div>
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
-                </div>
-            )}
+                <>
+                    <div>
+                        <Link href="/">
+                            <a>
+                                <Body>← Back to home</Body>
+                            </a>
+                        </Link>
+                    </div>
+                </>
+            )}{" "}
+            <Footer />
         </div>
     );
 }
