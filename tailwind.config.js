@@ -9,7 +9,12 @@ module.exports = {
             display: ["Gistesy", "sans"],
             body: ["Montserrat", "sans-serif"],
         },
-        extend: {},
+        extend: {
+            colors: {
+                primary: "#1c2120",
+                secondary: "#fff",
+            },
+        },
     },
     plugins: [],
 };
