@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
+import Image from "next/image";
 
 export default function Post({
     postData,
@@ -11,6 +12,7 @@ export default function Post({
         title: string;
         date: string;
         contentHtml: string;
+        imageUrl: string;
     };
 }) {
     return (
@@ -19,6 +21,7 @@ export default function Post({
                 <title>{postData.title}</title>
             </Head>
             <article>
+                <Image src={postData.imageUrl} height={500} width={800} />
                 <h1>{postData.title}</h1>
                 <div>
                     <Date dateString={postData.date} />

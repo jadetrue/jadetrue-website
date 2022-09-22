@@ -15,7 +15,7 @@ export default function Layout({
     home?: boolean;
 }) {
     return (
-        <div className="max-w-5xl w-full m-auto md:h-screen">
+        <div className="w-full max-w-5xl m-auto md:h-screen">
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 {/* TODO: Add meta description */}
@@ -48,17 +48,6 @@ export default function Layout({
                     </>
                 ) : (
                     <>
-                        <Link href="/">
-                            <a>
-                                <Image
-                                    priority
-                                    src="/images/profile.jpg"
-                                    height={108}
-                                    width={108}
-                                    alt={name}
-                                />
-                            </a>
-                        </Link>
                         <h2>
                             <Link href="/">
                                 <a>{name}</a>
