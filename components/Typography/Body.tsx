@@ -14,26 +14,26 @@ export const Body: React.FC<Props> = ({
     children,
 }) => {
     return (
-        <span
+        <p
             className={`font-body ${color} ${weight} ${findBodySize(
                 size
             )} ${styles}`}
         >
             {children}
-        </span>
+        </p>
     );
 };
 
 const findBodySize = (size: BodySize): string => {
     switch (size) {
         case "large":
-            return "text-lg"; // 16px
+            return "text-3xl"; // 30px
         case "medium":
-            return "text-md";
+            return "text-2xl"; // 24px
         case "small":
-            return "text-base"; // 14px
-        case "extra-small":
-            return "text-sm"; // 12px
+            return "text-lg"; // 18px
+        case "base":
+            return "text-base"; // 16px
         default:
             return "text-base";
     }

@@ -5,6 +5,8 @@ import Link from "next/link";
 import Date from "../components/date";
 import { GetStaticProps } from "next";
 import Image from "next/image";
+import HomeSplash from "../components/HomeSplash";
+import { Body } from "../components/Typography";
 
 export default function Home({
     allPostsData,
@@ -21,23 +23,27 @@ export default function Home({
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            {/* <section className="bg-red-200">
-                <h2>Blog</h2>
-                <ul>
-                    {allPostsData.map(({ id, date, title, imageUrl }) => (
-                        <li key={id}>
-                            <Link href={`/posts/${id}`}>
-                                <a>{title}</a>
-                            </Link>
-                            <Image src={imageUrl} height={500} width={800} />
-                            <br />
-                            <small>
-                                <Date dateString={date} />
-                            </small>
-                        </li>
-                    ))}
-                </ul>
-            </section> */}
+            <HomeSplash />
+            {/* <div className="flex space-x-4 space-y-4">
+                {allPostsData.map(({ id, date, title, imageUrl }) => (
+                    <div key={id} className="flex flex-col">
+                        <Link href={`/posts/${id}`}>
+                            <a>
+                                {imageUrl && (
+                                    <Image
+                                        src={imageUrl}
+                                        height={600}
+                                        width={1000}
+                                        className="rounded-lg"
+                                    />
+                                )}
+                                <Body size="large">{title}</Body>
+                            </a>
+                        </Link>
+                        <Date dateString={date} />
+                    </div>
+                ))}
+            </div> */}
         </Layout>
     );
 }

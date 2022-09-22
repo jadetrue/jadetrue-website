@@ -34,8 +34,10 @@ export const InternalLink: React.FC<Props> = ({
     children,
 }) => (
     <Link href={url}>
-        <Body weight={weight} color={color} size={size} styles={styles}>
-            {children}
-        </Body>
+        <a>
+            <Body weight={weight} color={color} size={size} styles={styles}>
+                {children}
+            </Body>
+        </a>
     </Link>
 );

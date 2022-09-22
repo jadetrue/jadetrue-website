@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, InternalLink } from "./Typography";
+import { ExternalLink, Header, InternalLink } from "./Typography";
 
 export interface Props {
     name: string;
@@ -7,7 +7,7 @@ export interface Props {
 
 export const Navigation: React.FC<Props> = ({ name }) => {
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center mt-16">
+        <div className="flex flex-col items-center justify-between mt-16 md:flex-row">
             <div className="py-2">
                 <Header size="large">{name}</Header>
             </div>

@@ -4,3 +4,5 @@ import Layout from "../components/Layout";
 export const contact = () => {
     return <Layout>contact</Layout>;
 };
+
+export default contact;
