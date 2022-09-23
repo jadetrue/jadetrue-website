@@ -1,16 +1,30 @@
 import React from "react";
+import Button from "./Button";
 import Icon from "./Icon";
 import { Header, InternalLink } from "./Typography";
 
 export interface Props {
     name: string;
+    showMobileNav: boolean;
+    setShowMobileNav: (active: boolean) => void;
 }
 
-export const Navigation: React.FC<Props> = ({ name }) => {
+export const Navigation: React.FC<Props> = (props) => {
     return (
-        <div className="flex flex-col items-center justify-between mt-16 md:flex-row">
+        <>
+            <DesktopNavigation {...props} />
+            <MobileNavigation {...props} />
+        </>
+    );
+};
+
+export const DesktopNavigation: React.FC<Props> = ({ name }) => {
+    return (
+        <div className="flex-col items-center justify-between hidden mt-16 mb-16 lg:flex md:flex-row">
             <div className="py-2">
-                <Header size="large">{name}</Header>
+                <InternalLink url="/">
+                    <Header size="large">{name}</Header>
+                </InternalLink>
             </div>
             <div className="flex flex-col mt-12 md:flex-row md:mt-0 gap-14">
                 <NavItem url="/">Home</NavItem>
@@ -25,14 +39,67 @@ export const Navigation: React.FC<Props> = ({ name }) => {
     );
 };
 
+const MobileNavigation: React.FC<Props> = ({
+    showMobileNav,
+    setShowMobileNav,
+}) => {
+    return (
+        <>
+            <div
+                className={`flex lg:hidden flex-row items-center justify-between mt-16 ${
+                    showMobileNav && "hidden"
+                }`}
+            >
+                <div className="py-2">
+                    <InternalLink url="/">
+                        <Header size="large">JT</Header>
+                    </InternalLink>
+                </div>
+                <Button onClick={() => setShowMobileNav(!showMobileNav)}>
+                    <Icon name="bars" prefix="fas" />
+                </Button>
+            </div>
+            {showMobileNav && (
+                <div className="z-30 flex flex-col h-screen mt-16 bg-white md:hidden">
+                    <div className="flex flex-row items-center justify-between">
+                        <div className="py-2">
+                            <InternalLink url="/">
+                                <div className="relative w-32 h-20 cursor-pointer">
+                                    <Header>JT</Header>
+                                </div>
+                            </InternalLink>
+                        </div>
+                        <Button
+                            onClick={() => setShowMobileNav(!showMobileNav)}
+                        >
+                            <Icon name="close" prefix="fas" />
+                        </Button>
+                    </div>
+                    <div className="flex flex-col justify-between h-full text-center">
+                        <div className="flex flex-col items-center justify-center gap-16">
+                            <NavItem url="" color="text-primary">
+                                Home
+                            </NavItem>
+                            <NavItem url="">About</NavItem>
+                            <NavItem url="">Tools</NavItem>
+                            <NavItem url="">Blog</NavItem>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </>
+    );
+};
+
 interface NavItemProps {
     url: string;
+    color?: string;
     children?: React.ReactNode;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ url = "/", children }) => {
+const NavItem: React.FC<NavItemProps> = ({ url = "/", color, children }) => {
     return (
-        <InternalLink url={url} weight="font-semibold">
+        <InternalLink url={url} weight="font-semibold" color={color}>
             {children}
         </InternalLink>
     );

@@ -12,8 +12,22 @@ import {
     faMoon,
     faCircleHalfStroke,
     faDownload,
+    faBars,
+    faClose,
+    faQuoteLeft,
+    faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fas, faTwitter);
 library.add(fab, faGithubAlt, faLinkedinIn);
-library.add(fas, faAt, faMoon, faCircleHalfStroke, faDownload);
+library.add(
+    fas,
+    faAt,
+    faMoon,
+    faCircleHalfStroke,
+    faDownload,
+    faBars,
+    faClose,
+    faQuoteLeft,
+    faQuoteRight
+);

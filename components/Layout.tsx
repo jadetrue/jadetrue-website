@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 import Footer from "./Footer";
 import { Navigation } from "./Navigation";
 import { Body } from "./Typography";
@@ -14,6 +15,8 @@ export default function Layout({
     children?: React.ReactNode;
     home?: boolean;
 }) {
+    const [showMobileNav, setShowMobileNav] = useState(false);
+
     return (
         <div className="w-full max-w-5xl px-8 m-auto md:h-screen">
             <Head>
@@ -36,8 +39,14 @@ export default function Layout({
                     href="/favicon-16x16.png"
                 />
                 <link rel="manifest" href="/site.webmanifest" />
-                {/* TODO: Add meta description */}
-                <meta name="description" content="" />
+                <meta
+                    name="description"
+                    content="Hey, I'm Jade True! I'm a Front-end developer based in North Somerset."
+                />
+                <meta
+                    name="keywords"
+                    content="Front-end developer, Fullstack developer, React, TypeScript"
+                />
                 <meta
                     property="og:image"
                     content={`https://og-image.vercel.app/${encodeURI(
@@ -61,7 +70,11 @@ export default function Layout({
                 ></script>
             </Head>
             <header>
-                <Navigation name={name} />
+                <Navigation
+                    name={name}
+                    showMobileNav={showMobileNav}
+                    setShowMobileNav={setShowMobileNav}
+                />
             </header>
             <main>{children}</main>
             {!home && (
@@ -74,7 +87,7 @@ export default function Layout({
                         </Link>
                     </div>
                 </>
-            )}{" "}
+            )}
             <Footer />
         </div>
     );

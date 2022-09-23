@@ -10,7 +10,7 @@ export const Body: React.FC<Props> = ({
     color = "text-primary",
     weight = "font-normal",
     size = "medium",
-    styles = "",
+    styles,
     children,
 }) => {
     return (

@@ -23,11 +23,19 @@ export default function Home({
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <HomeSplash />
-            <About />
-            <Skills />
+            <div className="my-24">
+                <HomeSplash />
+            </div>
+            <div className="my-48">
+                <About />
+            </div>
+            <div className="my-48">
+                <Skills />
+            </div>
+            <div className="my-48">
+                <CTA />
+            </div>
             <Blog data={allPostsData} />
-            {/* <CTA /> */}
         </Layout>
     );
 }

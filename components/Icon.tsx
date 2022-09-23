@@ -6,15 +6,11 @@ import { IconPrefix } from "@fortawesome/fontawesome-svg-core";
 interface Props {
     name: IconName;
     prefix?: IconPrefix;
-    size?: string;
     styles?: string;
 }
 
-const Icon: React.FC<Props> = ({ name, prefix = "fab", size, styles }) => (
-    <FontAwesomeIcon
-        icon={{ prefix, iconName: name }}
-        className={`${size} ${styles}`}
-    />
+const Icon: React.FC<Props> = ({ name, prefix = "fab", styles }) => (
+    <FontAwesomeIcon icon={{ prefix, iconName: name }} className={styles} />
 );
 
 export default Icon;
