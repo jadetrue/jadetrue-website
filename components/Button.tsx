@@ -16,7 +16,7 @@ const Button: React.FC<Props> = ({ href, onClick, styles, children }) => {
                 href={href}
                 target="_blank"
                 rel="noreferrer noopener"
-                className={`rounded flex flex-row items-center w-fit p-2 ${styles}`}
+                className={`rounded flex flex-row items-center p-2 px-6 bg-primary w-fit ${styles}`}
             >
                 <Body color="text-secondary">{children}</Body>
             </a>

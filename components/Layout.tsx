@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Link from "next/link";
 import { useState } from "react";
+import Button from "./Button";
 import Footer from "./Footer";
 import { Navigation } from "./Navigation";
-import { Body } from "./Typography";
+import { Body, InternalLink } from "./Typography";
 
 const name = "Jade True";
 export const siteTitle = "Jade True | Front-end developer";
@@ -78,15 +78,15 @@ export default function Layout({
             </header>
             <main>{children}</main>
             {!home && (
-                <>
-                    <div>
-                        <Link href="/">
-                            <a>
-                                <Body>← Back to home</Body>
-                            </a>
-                        </Link>
-                    </div>
-                </>
+                <div className="flex justify-center w-full mb-12">
+                    <InternalLink url="/">
+                        <Button>
+                            <Body size="small" color="text-secondary">
+                                👈🏻 Back to home
+                            </Body>
+                        </Button>
+                    </InternalLink>
+                </div>
             )}
             <Footer />
         </div>

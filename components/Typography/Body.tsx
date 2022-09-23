@@ -34,6 +34,8 @@ const findBodySize = (size: BodySize): string => {
             return "text-lg"; // 18px
         case "base":
             return "text-base"; // 16px
+        case "extra-small":
+            return "text-sm"; // 14px
         default:
             return "text-base";
     }

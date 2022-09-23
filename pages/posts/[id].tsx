@@ -5,6 +5,7 @@ import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Image from "next/image";
 import { Body, Header } from "../../components/Typography";
+import lengthToMinutes from "../../services/lengthToMinutes";
 
 export default function Post({
     postData,
@@ -23,7 +24,10 @@ export default function Post({
             </Head>
             <article className="flex flex-col items-center w-full p-2 m-auto mb-12 text-center">
                 <Header styles="mt-12 tracking-wider">{postData.title}</Header>
-                <Date dateString={postData.date} styles="mb-12" />
+                <Date dateString={postData.date} styles="px-3 pt-3" />
+                <Body size="extra-small" styles="mb-12 ">
+                    {`${lengthToMinutes(postData.contentHtml.length || 100)}`}
+                </Body>
                 <Image
                     src={postData.imageUrl}
                     height={500}
