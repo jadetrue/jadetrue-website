@@ -11,7 +11,7 @@ export interface Props {
 
 const Blog: React.FC<Props> = ({ data }) => {
     return (
-        <div id="Blog">
+        <div id="blog">
             <Header styles="text-center">Blog</Header>
             <div className="flex w-full gap-4 my-24 drop-shadow-lg">
                 {data.map(({ id, date, title, imageUrl }) => (

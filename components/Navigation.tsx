@@ -15,8 +15,8 @@ export const Navigation: React.FC<Props> = ({ name }) => {
             <div className="flex flex-col mt-12 md:flex-row md:mt-0 gap-14">
                 <NavItem url="/">Home</NavItem>
                 <NavItem url="#about">About</NavItem>
-                <NavItem url="#skills">Skills</NavItem>
-                <NavItem url="#contact">Contact</NavItem>
+                <NavItem url="#tools">Skills</NavItem>
+                <NavItem url="#blog">Blog</NavItem>
                 <NavItem url="/">
                     <Icon name="circle-half-stroke" prefix="fas" />
                 </NavItem>
