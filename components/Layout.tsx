@@ -5,7 +5,7 @@ import { Navigation } from "./Navigation";
 import { Body } from "./Typography";
 
 const name = "Jade True";
-export const siteTitle = "Jade True | Frontend developer";
+export const siteTitle = "Jade True | Front-end developer";
 
 export default function Layout({
     children,

@@ -3,15 +3,81 @@ import { Body, Header } from "./Typography";
 
 const Skills = () => {
     return (
-        <div id="skills">
-            <Header styles="text-center w-full">Skills</Header>
-            <div className="grid justify-center grid-cols-3 gap-4 m-auto my-16 overflow-hidden bg-blue-200">
-                <SkillItem>React</SkillItem>
-                <SkillItem>TypeScript</SkillItem>
-                <SkillItem>Node</SkillItem>
-                <SkillItem>Tailwind CSS</SkillItem>
-                <SkillItem>Git</SkillItem>
-                <SkillItem>npm</SkillItem>
+        <div id="tools">
+            <Header styles="text-center w-full">What I use</Header>
+            <div className="grid items-center justify-center w-full grid-cols-3 gap-8 m-auto my-16 overflow-hidden">
+                <SkillItem>
+                    <img
+                        src="/images/skills-html.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>HTML 5</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-css3.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>CSS 3</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-javascript.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>JavaScript</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-react.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>React</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-typescript.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>TypeScript</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-nodejs.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>NodeJS</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-tailwind.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>Tailwind CSS</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-git.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>Git</Body>
+                </SkillItem>
+                <SkillItem>
+                    <img
+                        src="/images/skills-npm.png"
+                        height={100}
+                        width={100}
+                    />
+                    <Body>npm</Body>
+                </SkillItem>
             </div>
         </div>
     );
@@ -23,8 +89,8 @@ interface SkillItemProps {
 
 const SkillItem: React.FC<SkillItemProps> = ({ children }) => {
     return (
-        <div className="flex items-center justify-center w-24 h-24 bg-red-200">
-            <Body>{children}</Body>
+        <div className="flex flex-col items-center justify-center gap-4 m-auto text-center">
+            {children}
         </div>
     );
 };
