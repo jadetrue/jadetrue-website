@@ -32,7 +32,7 @@ export default function Layout({
         <div
             className={`${
                 isDark ? "dark" : ""
-            } w-full m-auto max-w-5xl md:h-screen dark:bg-primary`}
+            } m-auto md:max-w-5xl md:h-screen dark:bg-primary w-full px-8 md:px-0`}
         >
             <Head>
                 <link rel="icon" href="/favicon.ico" />

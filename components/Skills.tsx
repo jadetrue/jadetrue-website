@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         <div id="tools">
             <Header styles="text-center w-full">What I use</Header>
-            <div className="grid items-center justify-center w-full grid-cols-3 gap-8 m-auto my-16 overflow-hidden">
+            <div className="grid items-center justify-center w-full grid-cols-2 gap-16 m-auto my-24 overflow-hidden md:my-16 md:gap-8 md:grid-cols-3 ">
                 <SkillItem>
                     <img
                         src="/images/skills-html.png"

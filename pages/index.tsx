@@ -26,13 +26,13 @@ export default function Home({
             <div className="py-24">
                 <HomeSplash />
             </div>
-            <div className="py-48">
+            <div className="py-24 md:py-48">
                 <About />
             </div>
-            <div className="py-48">
+            <div className="py-24 md:py-48">
                 <Skills />
             </div>
-            <div className="py-48">
+            <div className="py-24 md:py-48">
                 <CTA />
             </div>
             <Blog data={allPostsData} />

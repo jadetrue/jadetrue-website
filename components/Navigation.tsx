@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
 import Button from "./Button";
 import Icon from "./Icon";
-import { Header, InternalLink } from "./Typography";
+import { Body, Header, InternalLink } from "./Typography";
 
 export interface Props {
     name: string;
@@ -20,7 +20,6 @@ export const Navigation: React.FC<Props> = (props) => {
 };
 
 export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
-    const [isDark, setIsDark] = useState<boolean>(false);
     return (
         <div className="flex-col items-center justify-between hidden pt-16 pb-16 dark:bg-primary lg:flex md:flex-row">
             <div className="py-2">
@@ -33,7 +32,6 @@ export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
                 <NavItem url="#about">About</NavItem>
                 <NavItem url="#tools">Skills</NavItem>
                 <NavItem url="#blog">Blog</NavItem>
-
                 <button onClick={onClickIsDark}>
                     <Icon name={`circle-half-stroke`} prefix="fas" />
                 </button>
@@ -45,6 +43,7 @@ export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
 const MobileNavigation: React.FC<Props> = ({
     showMobileNav,
     setShowMobileNav,
+    onClickIsDark,
 }) => {
     return (
         <>
@@ -53,39 +52,45 @@ const MobileNavigation: React.FC<Props> = ({
                     showMobileNav && "hidden"
                 }`}
             >
-                <div className="py-2">
-                    <InternalLink url="/">
-                        <Header size="large">JT</Header>
-                    </InternalLink>
-                </div>
+                <InternalLink url="/">
+                    <Header size="large">JT</Header>
+                </InternalLink>
                 <Button onClick={() => setShowMobileNav(!showMobileNav)}>
-                    <Icon name="bars" prefix="fas" />
+                    <Icon
+                        name="bars"
+                        prefix="fas"
+                        styles="text-secondary dark:text-primary"
+                    />
                 </Button>
             </div>
             {showMobileNav && (
-                <div className="z-30 flex flex-col h-screen pt-16 bg-white md:hidden">
+                <div className="flex flex-col pt-16 bg-secondary dark:bg-primary md:hidden">
                     <div className="flex flex-row items-center justify-between">
-                        <div className="py-2">
-                            <InternalLink url="/">
-                                <div className="relative w-32 h-20 cursor-pointer">
-                                    <Header>JT</Header>
-                                </div>
-                            </InternalLink>
-                        </div>
+                        <InternalLink url="/">
+                            <Header>JT</Header>
+                        </InternalLink>
                         <Button
                             onClick={() => setShowMobileNav(!showMobileNav)}
                         >
-                            <Icon name="close" prefix="fas" />
+                            <Icon
+                                name="close"
+                                prefix="fas"
+                                styles="text-secondary dark:text-primary"
+                            />
                         </Button>
                     </div>
                     <div className="flex flex-col justify-between h-full text-center">
                         <div className="flex flex-col items-center justify-center gap-16">
-                            <NavItem url="" color="text-primary">
-                                Home
-                            </NavItem>
+                            <NavItem url="">Home</NavItem>
                             <NavItem url="">About</NavItem>
                             <NavItem url="">Tools</NavItem>
                             <NavItem url="">Blog</NavItem>
+                            <button onClick={onClickIsDark}>
+                                <Icon
+                                    name={`circle-half-stroke`}
+                                    prefix="fas"
+                                />
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -103,7 +108,7 @@ interface NavItemProps {
 const NavItem: React.FC<NavItemProps> = ({ url = "/", color, children }) => {
     return (
         <InternalLink url={url} weight="font-semibold" color={color}>
-            {children}
+            <Body>{children}</Body>
         </InternalLink>
     );
 };

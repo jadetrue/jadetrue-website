@@ -7,10 +7,13 @@ import SocialIcons from "./SocialIcons";
 const HomeSplash = () => {
     const imageUrl = "/images/jade-true.png";
     return (
-        <div className="flex flex-col-reverse items-center justify-between md:flex-row md:gap-14">
+        <div className="flex flex-col-reverse items-center justify-between w-full md:flex-row md:gap-14">
             <SocialIcons type="vertical" styles="hidden md:flex" />
-            <div className="flex flex-col gap-6 my-16 md:my-32 w-96">
-                <Header size="large" styles="tracking-wider py-2">
+            <div className="flex flex-col gap-6 my-16 md:my-32 md:w-96">
+                <Header
+                    size="large"
+                    styles="leading-relaxed md:leading-none tracking-wider py-2"
+                >
                     Hey, I'm Jade
                 </Header>
                 <Body weight="font-semibold" size="large">
