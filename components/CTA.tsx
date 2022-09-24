@@ -2,9 +2,9 @@ import React from "react";
 import Icon from "./Icon";
 import { Body } from "./Typography";
 
-const CTA = () => {
+const CTA: React.FC = () => {
     return (
-        <div className="w-full full-bleed bg-primary h-[450px] text-secondary p-10 flex flex-col gap-8 items-center justify-center">
+        <div className="w-full full-bleed bg-primary h-[450px] text-secondary  p-10 flex flex-col gap-8 items-center justify-center">
             <div className="flex flex-col w-full max-w-5xl">
                 <Icon
                     name="quote-left"

@@ -9,8 +9,10 @@ interface Props {
     styles?: string;
 }
 
-const Icon: React.FC<Props> = ({ name, prefix = "fab", styles }) => (
-    <FontAwesomeIcon icon={{ prefix, iconName: name }} className={styles} />
-);
+const Icon: React.FC<Props> = ({
+    name,
+    prefix = "fab",
+    styles = "text-primary dark:text-secondary",
+}) => <FontAwesomeIcon icon={{ prefix, iconName: name }} className={styles} />;
 
 export default Icon;

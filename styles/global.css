@@ -11,3 +11,8 @@
     box-shadow: 0 0 0 100vmax #1c2120;
     clip-path: inset(0 -100vmax);
 }
+
+.full-bleed-dark {
+    box-shadow: 0 0 0 100vmax #fff;
+    clip-path: inset(0 -100vmax);
+}

@@ -11,7 +11,7 @@ export const Date: React.FC<Props> = ({ dateString, styles }) => {
 
     return (
         <time dateTime={dateString}>
-            <Body size="small" styles={`${styles}`}>
+            <Body size="small" color="text-primary" styles={`${styles}`}>
                 {format(date, "LLLL d, yyyy")}
             </Body>
         </time>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Button from "./Button";
 import Footer from "./Footer";
 import { Navigation } from "./Navigation";
@@ -17,8 +17,23 @@ export default function Layout({
 }) {
     const [showMobileNav, setShowMobileNav] = useState(false);
 
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        if (
+            "darkMode" in localStorage &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+            localStorage.setItem("darkMode", JSON.stringify(isDark));
+        }
+    }, [isDark]);
+
     return (
-        <div className="w-full max-w-5xl px-8 m-auto md:h-screen">
+        <div
+            className={`${
+                isDark ? "dark" : ""
+            } w-full m-auto max-w-5xl md:h-screen dark:bg-primary`}
+        >
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <link
@@ -69,19 +84,23 @@ export default function Layout({
                     crossOrigin="anonymous"
                 ></script>
             </Head>
-            <header>
+            <header className="dark:bg-primary">
                 <Navigation
                     name={name}
                     showMobileNav={showMobileNav}
                     setShowMobileNav={setShowMobileNav}
+                    onClickIsDark={() => setIsDark(!isDark)}
                 />
             </header>
-            <main>{children}</main>
+            <main className="dark:bg-primary">{children}</main>
             {!home && (
-                <div className="flex justify-center w-full mb-12">
+                <div className="flex justify-center w-full pb-12 dark:bg-primary">
                     <InternalLink url="/">
                         <Button>
-                            <Body size="small" color="text-secondary">
+                            <Body
+                                size="small"
+                                color="text-secondary dark:text-primary"
+                            >
                                 👈🏻 Back to home
                             </Body>
                         </Button>

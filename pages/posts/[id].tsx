@@ -22,10 +22,13 @@ export default function Post({
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <article className="flex flex-col items-center w-full p-2 m-auto mb-12 text-center">
-                <Header styles="mt-12 tracking-wider">{postData.title}</Header>
-                <Date dateString={postData.date} styles="px-3 pt-3" />
-                <Body size="extra-small" styles="mb-12 ">
+            <article className="flex flex-col items-center w-full p-2 pb-12 m-auto text-center">
+                <Header styles="pt-12 tracking-wider">{postData.title}</Header>
+                <Date
+                    dateString={postData.date}
+                    styles="px-3 pt-3 dark:text-secondary"
+                />
+                <Body size="extra-small" styles="pb-12 ">
                     {`${lengthToMinutes(postData.contentHtml.length || 100)}`}
                 </Body>
                 <Image
@@ -34,9 +37,9 @@ export default function Post({
                     width={800}
                     className="rounded-lg"
                 />
-                <Body size="base">
+                <Body size="base" color="dark:text-secondary">
                     <div
-                        className="mt-12 prose text-left lg:prose-xl"
+                        className="pt-12 text-left lg:prose-xl"
                         dangerouslySetInnerHTML={{
                             __html: postData.contentHtml,
                         }}

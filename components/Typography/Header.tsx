@@ -7,7 +7,7 @@ export interface Props extends TypographyProps {
 }
 
 export const Header: React.FC<Props> = ({
-    color = "text-primary",
+    color = "text-primary dark:text-secondary",
     weight = "font-regular",
     size = "large",
     styles = "p-2",

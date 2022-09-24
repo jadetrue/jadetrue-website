@@ -35,6 +35,7 @@ const Blog: React.FC<Props> = ({ data }) => {
                                         size="medium"
                                         weight="font-normal"
                                         styles="p-3"
+                                        color='text-primary'
                                     >
                                         {title}
                                     </Body>
