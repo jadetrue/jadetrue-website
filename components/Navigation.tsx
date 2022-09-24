@@ -24,10 +24,12 @@ export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
         <div className="flex-col items-center justify-between hidden pt-16 pb-16 dark:bg-primary lg:flex md:flex-row">
             <div className="py-2">
                 <InternalLink url="/">
-                    <Header size="large">{name}</Header>
+                    <Header size="large" styles="align-middle">
+                        {name}
+                    </Header>
                 </InternalLink>
             </div>
-            <div className="flex flex-col pt-12 md:flex-row md:mt-0 gap-14">
+            <div className="flex flex-col md:flex-row md:mt-0 gap-14">
                 <NavItem url="/">Home</NavItem>
                 <NavItem url="#about">About</NavItem>
                 <NavItem url="#tools">Skills</NavItem>

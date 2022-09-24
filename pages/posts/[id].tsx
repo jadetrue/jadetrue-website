@@ -23,7 +23,9 @@ export default function Post({
                 <title>{postData.title}</title>
             </Head>
             <article className="flex flex-col items-center w-full p-2 pb-12 m-auto text-center">
-                <Header styles="pt-12 tracking-wider">{postData.title}</Header>
+                <Header styles="pt-12 tracking-wider leading-relaxed md:leading-none">
+                    {postData.title}
+                </Header>
                 <Date
                     dateString={postData.date}
                     styles="px-3 pt-3 dark:text-secondary"
@@ -39,7 +41,7 @@ export default function Post({
                 />
                 <Body size="base" color="dark:text-secondary">
                     <div
-                        className="pt-12 text-left lg:prose-xl"
+                        className="pt-12 prose text-left lg:prose-xl"
                         dangerouslySetInnerHTML={{
                             __html: postData.contentHtml,
                         }}
