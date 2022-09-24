@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div id="about">
             <Header styles="text-center w-full">About</Header>
-            <div className="w-full my-16 md:text-center">
+            <div className="w-full my-24 md:text-center">
                 <Body>
                     I’m a{" "}
                     <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">
