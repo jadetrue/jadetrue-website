@@ -26,6 +26,8 @@ export const Body: React.FC<Props> = ({
 
 const findBodySize = (size: BodySize): string => {
     switch (size) {
+        case "extra-large":
+            return "text-4xl";
         case "large":
             return "text-3xl"; // 30px
         case "medium":

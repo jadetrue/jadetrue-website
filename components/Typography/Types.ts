@@ -1,6 +1,12 @@
 export type HeaderSize = "large" | "extra-large";
 
-export type BodySize = "extra-small" | "base" | "small" | "medium" | "large";
+export type BodySize =
+    | "extra-small"
+    | "base"
+    | "small"
+    | "medium"
+    | "large"
+    | "extra-large";
 
 export type FontWeight =
     | "font-normal"

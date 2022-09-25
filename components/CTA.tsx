@@ -1,22 +1,30 @@
 import React from "react";
 import Icon from "./Icon";
 import { Body } from "./Typography";
+import { Advice } from "../models/Advice";
 
-const CTA: React.FC = () => {
+export interface Props {
+    advice: Advice;
+}
+
+const CTA: React.FC<Props> = ({ advice }) => {
     return (
-        <div className=" full-bleed bg-primary h-[450px] text-secondary  p-10 flex flex-col gap-8 items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-8 p-10 full-bleed bg-primary h-fit text-secondary">
             <div className="flex flex-col w-full max-w-5xl">
                 <Icon
                     name="quote-left"
                     prefix="fas"
                     styles="text-6xl flex self-start"
                 />
-                <Body
-                    color="primary-secondary"
-                    styles="my-24 p-2 flex justify-center"
-                >
-                    RANDOM ADVICE TO GO HERE
-                </Body>
+                <div className="flex max-w-2xl my-16 place-self-center">
+                    <Body
+                        color="primary-secondary"
+                        styles="p-2 flex justify-center"
+                        size="extra-large"
+                    >
+                        {advice.advice}
+                    </Body>
+                </div>
                 <Icon
                     name="quote-right"
                     prefix="fas"
