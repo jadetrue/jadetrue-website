@@ -4,7 +4,7 @@ import { Body, Header } from "./Typography";
 const Skills = () => {
     return (
         <div id="skills">
-            <Header styles="text-center w-full">What I use</Header>
+            <Header styles="text-center w-full pt-8">What I use</Header>
             <div className="grid items-center justify-center w-full grid-cols-2 gap-16 m-auto my-24 overflow-hidden md:gap-8 md:grid-cols-3 ">
                 <SkillItem>
                     <img

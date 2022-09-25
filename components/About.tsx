@@ -4,7 +4,7 @@ import { Header, Body } from "./Typography";
 const About = () => {
     return (
         <div id="about">
-            <Header styles="text-center w-full">About</Header>
+            <Header styles="text-center w-full pt-8">About</Header>
             <div className="w-full my-24 md:text-center">
                 <Body>
                     I’m a{" "}

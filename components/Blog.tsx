@@ -11,7 +11,7 @@ export interface Props {
 const Blog: React.FC<Props> = ({ data }) => {
     return (
         <div id="blog">
-            <Header styles="text-center">Blog</Header>
+            <Header styles="text-center w-full pt-8">Blog</Header>
             <div className="flex items-center justify-center w-full">
                 <div className="my-24 md:w-1/2">
                     {data.map(({ id, date, title, imageUrl }) => (
