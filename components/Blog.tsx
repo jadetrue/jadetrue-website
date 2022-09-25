@@ -13,7 +13,7 @@ const Blog: React.FC<Props> = ({ data }) => {
         <div id="blog">
             <Header styles="text-center w-full pt-8">Blog</Header>
             <div className="flex items-center justify-center w-full">
-                <div className="my-24 md:w-1/2">
+                <div className="flex flex-col gap-8 my-24 md:flex-row">
                     {data.map(({ id, date, title, imageUrl }) => (
                         <div key={id} className="flex flex-col rounded-lg">
                             <Link href={`/posts/${id}`}>
