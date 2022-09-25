@@ -84,7 +84,7 @@ export default function Layout({
                     crossOrigin="anonymous"
                 ></script>
             </Head>
-            <header className="dark:bg-primary">
+            <header className="md:top-0 md:z-50 md:sticky bg-secondary dark:bg-primary">
                 <Navigation
                     name={name}
                     showMobileNav={showMobileNav}
@@ -92,7 +92,7 @@ export default function Layout({
                     onClickIsDark={() => setIsDark(!isDark)}
                 />
             </header>
-            <main className="dark:bg-primary">{children}</main>
+            <main className="md:relative dark:bg-primary">{children}</main>
             {!home && (
                 <div className="flex justify-center w-full pb-12 dark:bg-primary">
                     <InternalLink url="/">

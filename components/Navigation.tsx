@@ -21,7 +21,6 @@ export const Navigation: React.FC<Props> = (props) => {
 };
 
 export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
-
     return (
         <div className="flex-col items-center justify-between hidden pt-16 pb-16 dark:bg-primary lg:flex md:flex-row">
             <div className="py-2">
@@ -109,11 +108,7 @@ interface NavItemProps {
     children?: React.ReactNode;
 }
 
-const NavItem: React.FC<NavItemProps> = ({
-    url = "/",
-    color,
-    children,
-}) => {
+const NavItem: React.FC<NavItemProps> = ({ url = "/", color, children }) => {
     const router = useRouter();
     return (
         <button
