@@ -36,16 +36,18 @@ export default function Home({
             <div className="pb-24">
                 <HomeSplash />
             </div>
-            <div className="py-24 md:pb-48">
+            <div className="py-24">
                 <About />
             </div>
-            <div className="py-24 md:pb-48">
+            <div className="py-24">
                 <Skills />
             </div>
-            <div className="py-24 md:pb-48">
+            <div className="py-24">
                 <CTA advice={advice} />
             </div>
-            <Blog data={allPostsData} />
+            <div className="py-24">
+                <Blog data={allPostsData} />
+            </div>
         </Layout>
     );
 }
