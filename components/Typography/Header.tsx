@@ -10,17 +10,17 @@ export const Header: React.FC<Props> = ({
     color = "text-primary dark:text-secondary",
     weight = "font-regular",
     size = "large",
-    styles = "p-2",
+    styles = "p-2 w-full",
     children,
 }) => {
     return (
-        <h2
-            className={`font-display ${color} ${weight} ${findHeaderSize(
+        <span
+            className={`font-display flex ${color} ${weight} ${findHeaderSize(
                 size
             )} ${styles}`}
         >
             {children}
-        </h2>
+        </span>
     );
 };
 

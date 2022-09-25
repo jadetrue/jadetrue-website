@@ -1,84 +1,90 @@
 import React from "react";
 import { Body, Header } from "./Typography";
+import { XyzTransitionGroup } from "@animxyz/react";
 
 const Skills = () => {
     return (
         <div id="skills">
-            <Header styles="text-center w-full pt-8">What I use</Header>
-            <div className="grid items-center justify-center w-full grid-cols-2 gap-16 m-auto my-24 overflow-hidden md:gap-8 md:grid-cols-3 ">
-                <SkillItem>
-                    <img
-                        src="/images/skills-html.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>HTML 5</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-css3.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>CSS 3</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-javascript.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>JavaScript</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-react.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>React</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-typescript.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>TypeScript</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-nodejs.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>NodeJS</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-tailwind.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>Tailwind CSS</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-git.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>Git</Body>
-                </SkillItem>
-                <SkillItem>
-                    <img
-                        src="/images/skills-npm.png"
-                        height={100}
-                        width={100}
-                    />
-                    <Body>npm</Body>
-                </SkillItem>
-            </div>
+            <Header styles="text-center w-full pt-8 justify-center">What I use</Header>
+            <XyzTransitionGroup
+                className="item-group"
+                xyz="fade down-5 rotate-right-50% stagger"
+            >
+                <div className="grid items-center justify-center w-full grid-cols-2 gap-16 m-auto my-24 overflow-hidden md:gap-8 md:grid-cols-3 ">
+                    <SkillItem>
+                        <img
+                            src="/images/skills-html.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>HTML 5</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-css3.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>CSS 3</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-javascript.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>JavaScript</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-react.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>React</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-typescript.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>TypeScript</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-nodejs.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>NodeJS</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-tailwind.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>Tailwind CSS</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-git.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>Git</Body>
+                    </SkillItem>
+                    <SkillItem>
+                        <img
+                            src="/images/skills-npm.png"
+                            height={100}
+                            width={100}
+                        />
+                        <Body>npm</Body>
+                    </SkillItem>
+                </div>
+            </XyzTransitionGroup>
         </div>
     );
 };
