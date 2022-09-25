@@ -1,4 +1,5 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import { useRouter } from "next/router";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Button from "./Button";
 import Icon from "./Icon";
 import { Body, Header, InternalLink } from "./Typography";
@@ -20,6 +21,7 @@ export const Navigation: React.FC<Props> = (props) => {
 };
 
 export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
+
     return (
         <div className="flex-col items-center justify-between hidden pt-16 pb-16 dark:bg-primary lg:flex md:flex-row">
             <div className="py-2">
@@ -32,7 +34,7 @@ export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
             <div className="flex flex-col md:flex-row md:mt-0 gap-14">
                 <NavItem url="/">Home</NavItem>
                 <NavItem url="#about">About</NavItem>
-                <NavItem url="#tools">Skills</NavItem>
+                <NavItem url="#skills">Skills</NavItem>
                 <NavItem url="#blog">Blog</NavItem>
                 <button onClick={onClickIsDark}>
                     <Icon name={`circle-half-stroke`} prefix="fas" />
@@ -66,7 +68,7 @@ const MobileNavigation: React.FC<Props> = ({
                 </Button>
             </div>
             {showMobileNav && (
-                <div className="flex flex-col pt-16 bg-secondary dark:bg-primary md:hidden">
+                <div className="z-30 flex flex-col h-screen pt-16 bg-secondary dark:bg-primary md:hidden">
                     <div className="flex flex-row items-center justify-between">
                         <InternalLink url="/">
                             <Header>JT</Header>
@@ -81,12 +83,12 @@ const MobileNavigation: React.FC<Props> = ({
                             />
                         </Button>
                     </div>
-                    <div className="flex flex-col justify-between h-full text-center">
-                        <div className="flex flex-col items-center justify-center gap-16">
-                            <NavItem url="">Home</NavItem>
-                            <NavItem url="">About</NavItem>
-                            <NavItem url="">Tools</NavItem>
-                            <NavItem url="">Blog</NavItem>
+                    <div className="flex flex-col items-center justify-between h-full text-center">
+                        <div className="flex flex-col items-center justify-center h-full gap-16 place-content-center">
+                            <NavItem url="/"> Home</NavItem>
+                            <NavItem url="#about">About</NavItem>
+                            <NavItem url="#skills">Tools</NavItem>
+                            <NavItem url="#blog">Blog</NavItem>
                             <button onClick={onClickIsDark}>
                                 <Icon
                                     name={`circle-half-stroke`}
@@ -107,10 +109,19 @@ interface NavItemProps {
     children?: React.ReactNode;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ url = "/", color, children }) => {
+const NavItem: React.FC<NavItemProps> = ({
+    url = "/",
+    color,
+    children,
+}) => {
+    const router = useRouter();
     return (
-        <InternalLink url={url} weight="font-semibold" color={color}>
+        <button
+            onClick={() => router.push(`/${url}`)}
+            color={color}
+            className="font-semibold"
+        >
             <Body>{children}</Body>
-        </InternalLink>
+        </button>
     );
 };

@@ -23,7 +23,7 @@ export default function Home({
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div className="py-24">
+            <div className="pb-24">
                 <HomeSplash />
             </div>
             <div className="py-24 md:py-48">
