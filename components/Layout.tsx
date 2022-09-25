@@ -83,6 +83,20 @@ export default function Layout({
                     src="https://kit.fontawesome.com/00cc1a91ac.js"
                     crossOrigin="anonymous"
                 ></script>
+                <script
+                  
+                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                />
+                <script>
+                    {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+            });
+        `}
+                </script>
             </Head>
             <header className="md:top-0 md:z-50 md:sticky bg-secondary dark:bg-primary">
                 <Navigation
