@@ -35,9 +35,9 @@ export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
                 <NavItem url="#about">About</NavItem>
                 <NavItem url="#skills">Skills</NavItem>
                 <NavItem url="#blog">Blog</NavItem>
-                <button onClick={onClickIsDark}>
+                {/* <button onClick={onClickIsDark}>
                     <Icon name={`circle-half-stroke`} prefix="fas" />
-                </button>
+                </button> */}
             </div>
         </div>
     );
@@ -88,12 +88,12 @@ const MobileNavigation: React.FC<Props> = ({
                             <NavItem url="#about">About</NavItem>
                             <NavItem url="#skills">Tools</NavItem>
                             <NavItem url="#blog">Blog</NavItem>
-                            <button onClick={onClickIsDark}>
+                            {/* <button onClick={onClickIsDark}>
                                 <Icon
                                     name={`circle-half-stroke`}
                                     prefix="fas"
                                 />
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
