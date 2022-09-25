@@ -116,7 +116,9 @@ const NavItem: React.FC<NavItemProps> = ({ url = "/", color, children }) => {
             color={color}
             className="font-semibold"
         >
-            <Body>{children}</Body>
+            <Body styles="hover:text-transparent hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:bg-clip-text">
+                {children}
+            </Body>
         </button>
     );
 };

@@ -1,5 +1,7 @@
 import "../styles/global.css";
 import "../styles/fontawesome";
+import "@animxyz/core";
+
 
 import { AppProps } from "next/app";
 
