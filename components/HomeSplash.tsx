@@ -30,7 +30,12 @@ const HomeSplash = () => {
                 </Link>
             </div>
             <div className="mt-16 md:mt-0">
-                <Image src={imageUrl} width={500} height={500} loading="lazy" />
+                <Image
+                    src={imageUrl}
+                    width={500}
+                    height={500}
+                    priority={true}
+                />
             </div>
         </div>
     );
