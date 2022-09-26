@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Date from "./Date";
+import Date from './date';
+
 import { XyzTransitionGroup } from "@animxyz/react";
 
 import { Header, Body } from "./Typography";
