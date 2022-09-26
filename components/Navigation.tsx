@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import React from "react";
 import Button from "./Button";
 import Icon from "./Icon";
 import { Body, Header, InternalLink } from "./Typography";
@@ -8,6 +8,7 @@ export interface Props {
     name: string;
     showMobileNav: boolean;
     setShowMobileNav: (active: boolean) => void;
+    onClickIsDark: () => void;
 }
 
 export const Navigation: React.FC<Props> = (props) => {
@@ -19,7 +20,7 @@ export const Navigation: React.FC<Props> = (props) => {
     );
 };
 
-export const DesktopNavigation: React.FC<Props> = ({ name }) => {
+export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
     return (
         <div className="flex-col items-center justify-between hidden pt-16 pb-16 dark:bg-primary lg:flex md:flex-row">
             <div className="py-2">
@@ -45,6 +46,7 @@ export const DesktopNavigation: React.FC<Props> = ({ name }) => {
 const MobileNavigation: React.FC<Props> = ({
     showMobileNav,
     setShowMobileNav,
+    onClickIsDark,
 }) => {
     return (
         <>
