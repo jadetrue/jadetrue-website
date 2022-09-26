@@ -17,13 +17,13 @@ const SocialIcons: React.FC<Props> = ({ type, styles }) => {
             } ${styles}`}
         >
             <ExternalLink url="https://www.linkedin.com/in/jadetrue/">
-                <Icon name="linkedin" styles="text-3xl" />
+                <Icon icon="linkedin" styles="text-3xl" />
             </ExternalLink>
             <ExternalLink url="https://github.com/jadetrue">
-                <Icon name="github" styles="text-3xl" />
+                <Icon icon="github" styles="text-3xl" />
             </ExternalLink>
             <ExternalLink url="https://twitter.com/jadetrue_">
-                <Icon name="twitter" styles="text-3xl" />
+                <Icon icon="twitter" styles="text-3xl" />
             </ExternalLink>
         </div>
     );
