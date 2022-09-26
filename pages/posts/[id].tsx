@@ -21,6 +21,11 @@ export default function Post({
         <Layout>
             <Head>
                 <title>{postData.title}</title>
+                <meta name="og:title" content={postData.title} />
+                <meta
+                    name="og:image"
+                    content={`https://www.jadetrue.co.uk/${postData.imageUrl}`}
+                />
             </Head>
             <article className="flex flex-col items-center w-full p-2 pb-12 m-auto text-center">
                 <Header styles="pt-12 tracking-wider leading-relaxed md:leading-none">
