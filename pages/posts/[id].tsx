@@ -28,16 +28,20 @@ export default function Post({
                 />
             </Head>
             <article className="flex flex-col items-center w-full p-2 pb-12 m-auto text-center">
-                <Header styles="pt-12 tracking-wider leading-relaxed md:leading-none">
-                    {postData.title}
-                </Header>
-                <Date
-                    dateString={postData.date}
-                    styles="px-3 pt-3 dark:text-secondary"
-                />
-                <Body size="extra-small" styles="pb-12 ">
-                    {`${lengthToMinutes(postData.contentHtml.length || 100)}`}
-                </Body>
+                <div className="flex flex-col items-center justify-center w-full">
+                    <Header styles="pt-12 tracking-wider leading-relaxed md:leading-none">
+                        {postData.title}
+                    </Header>
+                    <Date
+                        dateString={postData.date}
+                        styles="px-3 pt-3 dark:text-secondary"
+                    />
+                    <Body size="extra-small" styles="pb-12">
+                        {`${lengthToMinutes(
+                            postData.contentHtml.length || 100
+                        )}`}
+                    </Body>
+                </div>
                 <Image
                     src={postData.imageUrl}
                     height={500}
