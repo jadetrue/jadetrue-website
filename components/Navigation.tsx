@@ -8,7 +8,6 @@ export interface Props {
     name: string;
     showMobileNav: boolean;
     setShowMobileNav: (active: boolean) => void;
-    onClickIsDark: () => void;
 }
 
 export const Navigation: React.FC<Props> = (props) => {
@@ -20,7 +19,7 @@ export const Navigation: React.FC<Props> = (props) => {
     );
 };
 
-export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
+export const DesktopNavigation: React.FC<Props> = ({ name }) => {
     return (
         <div className="flex-col items-center justify-between hidden pt-16 pb-16 dark:bg-primary lg:flex md:flex-row">
             <div className="py-2">
@@ -46,7 +45,6 @@ export const DesktopNavigation: React.FC<Props> = ({ name, onClickIsDark }) => {
 const MobileNavigation: React.FC<Props> = ({
     showMobileNav,
     setShowMobileNav,
-    onClickIsDark,
 }) => {
     return (
         <>
