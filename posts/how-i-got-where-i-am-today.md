@@ -2,6 +2,8 @@
 title: "How I got where I am today"
 date: "2022-04-13"
 imageUrl: "/blog-images/how-i-got-where-i-am-today.jpeg"
+ogImage:
+    url: "/blog-images/how-i-got-where-i-am-today.jpeg"
 ---
 
 Hey, my name is Jade and I have 4+ years work experience as a **Project Manager** and now almost a 1 year, professionally, as a **Front-end Developer** for an awesome startup called Loopin 🦉
