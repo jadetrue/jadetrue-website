@@ -1,3 +1,7 @@
+## Initial desktop designs
+
+- [Figma Jade True designs](https://www.figma.com/file/NODcgitAAEGmbZW8rGfIH1/website?node-id=0%3A1)
+
 ## 🧰 Tools
 
 -   [NextJS](https://nextjs.org/)
