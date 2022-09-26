@@ -60,8 +60,7 @@ const MobileNavigation: React.FC<Props> = ({
                 </InternalLink>
                 <Button onClick={() => setShowMobileNav(!showMobileNav)}>
                     <Icon
-                        name="bars"
-                        prefix="fas"
+                        icon="bars"
                         styles="text-secondary dark:text-primary"
                     />
                 </Button>
@@ -76,8 +75,7 @@ const MobileNavigation: React.FC<Props> = ({
                             onClick={() => setShowMobileNav(!showMobileNav)}
                         >
                             <Icon
-                                name="close"
-                                prefix="fas"
+                                icon="close"
                                 styles="text-secondary dark:text-primary"
                             />
                         </Button>
@@ -90,8 +88,7 @@ const MobileNavigation: React.FC<Props> = ({
                             <NavItem url="#blog">Blog</NavItem>
                             {/* <button onClick={onClickIsDark}>
                                 <Icon
-                                    name={`circle-half-stroke`}
-                                    prefix="fas"
+                                    icon={`circle-half-stroke`}
                                 />
                             </button> */}
                         </div>
