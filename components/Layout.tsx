@@ -95,7 +95,7 @@ export default function Layout({
         `}
                 </script>
             </Head>
-            <header className="md:top-0 md:z-50 md:sticky bg-secondary dark:bg-primary">
+            <header className="md:top-0 md:z-50 bg-secondary dark:bg-primary">
                 <Navigation
                     name={name}
                     showMobileNav={showMobileNav}
