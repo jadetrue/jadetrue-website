@@ -1,6 +1,6 @@
-👋🏻 Hey, welcome to my repo for my [personal website](http://jadetrue.co.uk/)!
+# 👋🏻 Hey, welcome to my repo for my [personal website](http://jadetrue.co.uk/)!
 
-I've personally designed and built my website with inspiration from all over. I have chosen to work with NextJS and TypeScript for this particular project as I really enjoy working with them alongside Tailwind CSS to make everything a little prettier.
+I've personally designed and built my website with inspiration from all over. I have chosen to work with [NextJS](https://nextjs.org/) and [TypeScript](https://www.typescriptlang.org/) for this particular project as I really enjoy working with them alongside [Tailwind CSS](https://tailwindcss.com/) to make everything a little prettier.
 
 ## Initial desktop designs
 
