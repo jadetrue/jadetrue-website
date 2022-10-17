@@ -1,3 +1,7 @@
+👋🏻 Hey, welcome to my repo for my [personal website](http://jadetrue.co.uk/)!
+
+I've personally designed and built my website with inspiration from all over. I have chosen to work with NextJS and TypeScript for this particular project as I really enjoy working with them alongside Tailwind CSS to make everything a little prettier.
+
 ## Initial desktop designs
 
 - [Figma Jade True designs](https://www.figma.com/file/NODcgitAAEGmbZW8rGfIH1/website?node-id=0%3A1)
