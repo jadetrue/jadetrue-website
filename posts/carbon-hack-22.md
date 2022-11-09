@@ -6,7 +6,7 @@ imageUrl: "/blog-images/carbon-hack-22.png"
 
 > 400 developers joined [#CarbonHack22](https://twitter.com/hashtag/CarbonHack22?src=hashtag_click) to build the best carbon-aware application for a chance to win 40K USD.
 
-A previous colleague of mine, [Ismael](https://www.linkedin.com/in/ismaelvelasco), kindly re-posted my '_Open to work_' post on LinkedIn last month (October). Upon thanking Ismael for re-posting this, I was opened up to an opportunity to join a **3 week long Hackathon** organised by the [Green Software Foundation](https://greensoftware.foundation) 🌍.
+A previous colleague of mine, [Ismael](https://www.linkedin.com/in/ismaelvelasco), kindly re-posted my '_Open to work_' post on LinkedIn last month (October). Once I caught up Ismael, I was opened up to an opportunity to join a **3 week long Hackathon** organised by the [Green Software Foundation](https://greensoftware.foundation) 🌍.
 
 The objective of this Hackathon was to build the most **innovative** carbon-aware software solution using the Green Software Foundation's [Carbon Aware SDK](https://github.com/Green-Software-Foundation/carbon-aware-sdk); with Intel, UBS, Goldman Sachs, Microsoft, Accenture and more as judges!!
 
