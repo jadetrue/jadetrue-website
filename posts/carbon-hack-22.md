@@ -1,6 +1,6 @@
 ---
 title: "Carbon Hack | Green Webhook"
-date: "2022-11-09 "
+date: "2022-11-10 "
 imageUrl: "/blog-images/carbon-hack-22.png"
 ---
 
