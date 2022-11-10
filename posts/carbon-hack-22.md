@@ -76,4 +76,4 @@ Our vision for the Green Webhook is for it to grow into an "Internet Grid Operat
 
 Check out our pitch on YouTube - [https://www.youtube.com/watch?v=FyEYoeAGso4](https://www.youtube.com/watch?v=FyEYoeAGso4)
 
-Got this far? Try out the Green Webhook now: [https://greenwebhook.netlify.app](https://greenwebhook.netlify.app) ''''''''
+Got this far? Try out the Green Webhook now: [https://greenwebhook.netlify.app](https://greenwebhook.netlify.app)
