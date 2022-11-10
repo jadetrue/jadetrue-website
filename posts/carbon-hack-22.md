@@ -10,7 +10,7 @@ A previous colleague of mine, [Ismael](https://www.linkedin.com/in/ismaelvelasco
 
 The objective of this Hackathon was to build the most **innovative** carbon-aware software solution using the Green Software Foundation's [Carbon Aware SDK](https://github.com/Green-Software-Foundation/carbon-aware-sdk); with Intel, UBS, Goldman Sachs, Microsoft, Accenture and more as judges!!
 
-Ahead I went and looked for a project where I could contribute some of my skills and also throw myself into a new project, after being made redundant! I found an idea that I liked the sound of and applied it to be a part of this solution. Upon being accepted, we formed a team of 3 and had a Kick-Off (KO) call to discuss our ideas! [Jonathan](https://github.com/jonparker) being the brains of the operation, led the team and discussed his initial thoughts and away we went. 
+Ahead I went and looked for a project where I could contribute some of my skills and also throw myself into a new project, after being made redundant! I found an idea that I liked the sound of and applied it to be a part of this solution. Upon being accepted, we formed a team of 3 and had a Kick-Off (KO) call to discuss our ideas! [Jonathan](https://github.com/jonparker) being the brains of the operation, led the team and discussed his initial thoughts and away we went along with [Abdul](https://github.com/mr-loop-1).
 
 ## What problem does your idea solve?
 
@@ -27,13 +27,19 @@ Another example is data centres:
 
 ## Our solution
 
-I joined a team from the Hackathon called '[The Green Webhook](https://taikai.network/gsf/hackathons/carbonhack22/projects/cl92pm0zd67719801uv7n6gthuf/idea)'. Personally, I thought this was such an interesting and easy idea for users to become environmentally friendly without too much effort! What also drew my attention to this particular project was the possibility of using [RedwoodJS](https://redwoodjs.com/) and [TailwindCSS](https://tailwindcss.com/) in an awesome side project.
+I joined a team from the Hackathon called '[Green Webhook](https://taikai.network/gsf/hackathons/carbonhack22/projects/cl92pm0zd67719801uv7n6gthuf/idea)'. Personally, I thought this was such an interesting and easy idea for users to become environmentally friendly without too much effort! What also drew my attention to this particular project was the possibility of using [RedwoodJS](https://redwoodjs.com/) and [TailwindCSS](https://tailwindcss.com/) in an awesome side project. RedwoodJS, recently released in April 2022, is an App Framework for startups. It allows developers to quickly and easily access the frontend and backend in one place whilst utilising React, Prisma, TypeScript and Storybook! 
 
 The Green Webhook project's aim is to enable a **radical** reduction in carbon emissions in many different ways.
 
 Currently, it enables the reduction of carbon emissions of Azure Cloud to compute workloads and in future, it will enable reductions in personal devices (phones & laptops), smart home devices and IoT devices.
 
 The Green Webhook project is an easy-to-use solution allowing anyone to route traffic and compute-intensive workloads to the most carbon-friendly location or time of day depending on the real-time predictions of the [Carbon Aware SDK](https://github.com/Green-Software-Foundation/carbon-aware-sdk).
+
+## Carbon Aware SDK
+
+We used the Carbon Aware SDK to dynamically divert computer workloads to a time or Azure region that is less carbon intensive.
+
+When a system triggers a webhook event, instead of the request going directly to the system that requires notification of the event, the request can be routed via a Green Webhook which will act as an intelligent proxy using the Carbon Aware SDK to predict which destination and what time is the best in order to result in the lowest carbon.
 
 ## What we built
 
@@ -43,7 +49,7 @@ As well as the above, we have nearly completed the addition of time-shifting sup
 
 ## My contributions
 
-With a lot of the logic/fundamentals in place (thanks to Jon), I took a dive into styling and branding The Green Webhook. Firstly, I did some research into a name/logo for our project and worked from there. I used a website called Logaster (now due to be closed) to form a logo that was relevant to our project and the team agreed on this:
+With a lot of the logic/fundamentals in place (thanks to Jon), I took a dive into styling and branding the Green Webhook. Firstly, I did some research into a name/logo for our project and worked from there. I used a website called Logaster (now due to be closed) to form a logo that was relevant to our project and the team agreed on this:
 
 ![image](https://github.com/jonparker/green-webhook/blob/main/web/src/components/Header/logo-no-background.png?raw=true)
 
@@ -53,7 +59,7 @@ After deciding on the logo, I worked on creating functional components for the H
 
 Our project has the potential to result in massive reductions in carbon emissions.
 
-IT professionals can easily use Green Webhooks to intelligently schedule very large workloads via a simple user interface.
+IT professionals can easily use the Green Webhooks to intelligently schedule very large workloads via a simple user interface.
 
 Some examples of workloads that can be shifted are:
 
@@ -66,8 +72,8 @@ Some examples of workloads that can be shifted are:
 
 ## What the future holds
 
-Our vision for GreenWebhook is for it to grow into an "Internet Grid Operator". A carbon-aware webhook that location and time shift the workload that is triggered by any HTTP request. By being the intelligent "internet grid operator" we can provide demand shaping that works in harmony with the electricity grid supply shaping in order to reduce the carbon emissions the grid causes.
+Our vision for the Green Webhook is for it to grow into an "Internet Grid Operator". A carbon-aware webhook that location and time shift the workload that is triggered by any HTTP request. By being the intelligent "internet grid operator" we can provide demand shaping that works in harmony with the electricity grid supply shaping in order to reduce the carbon emissions the grid causes.
 
 Check out our pitch on YouTube - [https://www.youtube.com/watch?v=FyEYoeAGso4](https://www.youtube.com/watch?v=FyEYoeAGso4)
 
-Got this far? Try out the Green Webhook now: [https://greenwebhook.netlify.app](https://greenwebhook.netlify.app)
+Got this far? Try out the Green Webhook now: [https://greenwebhook.netlify.app](https://greenwebhook.netlify.app) ''''''''
