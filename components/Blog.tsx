@@ -16,15 +16,12 @@ export interface Props {
 const Blog: React.FC<Props> = ({ data, showAllBlogs = false }) => {
     return (
         <div id="blog">
-            <Header styles="text-center w-full pt-8 justify-center">
-                Blogs
-            </Header>
+            <Header styles="text-center w-full pt-8 justify-center">Blogs</Header>
             <XyzTransitionGroup appearVisible xyz="duration-15 tall-50% wide-5">
                 <div className="flex items-center justify-center w-full">
                     <div
-                        className={`grid w-full ${
-                            showAllBlogs && "grid-rows-2"
-                        } gap-8 my-24 md:grid-cols-2`}
+                        className={`grid w-full ${showAllBlogs && "grid-rows-2"
+                            } gap-8 my-24 md:grid-cols-2`}
                     >
                         {data
                             .map(({ id, date, title, imageUrl }) => (
