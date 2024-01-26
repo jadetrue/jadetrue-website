@@ -40,7 +40,7 @@ I felt as if my training had plateaued and I wanted a strong back to compliment 
 
 2. **Capturing Confidence: Boudoir & Fitness Photoshoots 📸**
 
-In a bold move, I decided to celebrate myself through a boudoir photoshoot, a unique experience that was both empowering and liberating. And hey, why stop there? I also delved into a fitness photoshoot showcasing the dedication and hard work invested in transforming not just my body but my mindset.
+In a bold move, I decided to celebrate myself through a boudoir photoshoot, a unique experience that was both empowering and liberating. And hey, why stop there? I also delved into a fitness photoshoot showcasing the dedication and hard work invested in transforming not just my body but my mindset. Thanks to my amazing online coach Nicole - [@\_nawilliams](https://www.instagram.com/_nawilliams/) for all the support and encouragement on this journey.
 
 ![Fitness Photoshoot 2023](/blog-images/2-photoshoot-min.png)
 
