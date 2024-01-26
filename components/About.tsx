@@ -16,7 +16,7 @@ const About = () => {
                 <br />
                 <Body>
                     Born and raised in Bristol, I currently live in North
-                    Somerset, with my fiance and little Dachshund, Frankie. 🐕
+                    Somerset, with my husband and little Dachshund, Frankie. 🐕
                     100% named after Frankfurter Sausages. I'm a bit obsessed
                     with all dogs and cute animals. I'd describe myself as a
                     curious, creative individual that enjoy's a challenge.
