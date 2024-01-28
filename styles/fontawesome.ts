@@ -2,7 +2,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
     fab,
-    faTwitter,
+    faXTwitter,
     faGithubAlt,
     faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
@@ -19,8 +19,7 @@ import {
     faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fas, faTwitter);
-library.add(fab, faGithubAlt, faLinkedinIn);
+library.add(fab, faGithubAlt, faLinkedinIn, faXTwitter);
 library.add(
     fas,
     faAt,
