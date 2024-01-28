@@ -18,8 +18,18 @@ const About = () => {
         <Body>
           Originally from Bristol and now settled in North Somerset with my
           husband and adorable Dachshund, Frankie (100% named after Frankfurter
-          Sausages, of course! 🐕). I consider myself a curious and creative
-          individual who thrives on challenges.
+          Sausages 🐕).
+        </Body>
+        <br />
+        <Body>
+          I consider myself a curious and creative individual who thrives on
+          challenges.
+        </Body>
+        <br />
+        <Body>
+          Explore my blog for additional insights into who I am, or feel free to
+          view my CV by clicking on the button below for a professional
+          overview.
         </Body>
         <br />
         <a
