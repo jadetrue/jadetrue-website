@@ -16,7 +16,9 @@ export interface Props {
 const Blog: React.FC<Props> = ({ data, showAllBlogs = false }) => {
   return (
     <div id="blog">
-      <Header styles="text-center w-full pt-8 justify-center">Blogs</Header>
+      <Header styles="text-center w-full pt-8 justify-center">
+        Jade's Journey Journal
+      </Header>
       <XyzTransitionGroup appearVisible xyz="duration-15 tall-50% wide-5">
         <div className="flex items-center justify-center w-full">
           <div
