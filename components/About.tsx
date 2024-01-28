@@ -2,28 +2,27 @@ import React from "react";
 import { Header, Body } from "./Typography";
 
 const About = () => {
-    return (
-        <div id="about">
-            <Header styles="text-center justify-center pt-8">About</Header>
-            <div className="w-full my-24 md:text-center">
-                <Body>
-                    I’m a{" "}
-                    <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">
-                        passionate
-                    </span>{" "}
-                    introvert who loves creating things with code.
-                </Body>
-                <br />
-                <Body>
-                    Born and raised in Bristol, I currently live in North
-                    Somerset, with my husband and little Dachshund, Frankie. 🐕
-                    100% named after Frankfurter Sausages. I'm a bit obsessed
-                    with all dogs and cute animals. I'd describe myself as a
-                    curious, creative individual that enjoy's a challenge.
-                </Body>
-            </div>
-        </div>
-    );
+  return (
+    <div id="about">
+      <Header styles="text-center justify-center pt-8">About</Header>
+      <div className="w-full my-24 md:text-center">
+        <Body>
+          Unleashing{" "}
+          <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">
+            creativity
+          </span>{" "}
+          through lines of code.
+        </Body>
+        <br />
+        <Body>
+          Originally from Bristol and now settled in North Somerset with my
+          husband and adorable Dachshund, Frankie (100% named after Frankfurter
+          Sausages, of course! 🐕). I consider myself a curious and creative
+          individual who thrives on challenges
+        </Body>
+      </div>
+    </div>
+  );
 };
 
 export default About;

@@ -19,7 +19,7 @@ const HomeSplash = () => {
                     Hey, I'm Jade
                 </Header>
                 <Body weight="font-semibold" size="large">
-                    Front-end Developer
+                    Software Developer
                 </Body>
                 <Body weight="font-medium">
                     Primarily working with React, NextJS, TypeScript and
