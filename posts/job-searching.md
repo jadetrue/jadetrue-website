@@ -52,4 +52,6 @@ Having 4+ years of experience as a Project Manager, I've always wanted to be a d
 - Creative, I enjoy coding and making things look appealing to users. I especially like hand-making cards for Birthdays / Christmas etc and appreciate the finer details. 🎨
 - I am a very career-driven individual, always looking for new challenges, and got into Frontend Development through self-learning. 💻
 
+If you'd like to know more, I am available for new opportunities immediately - please do check out the rest of my website and my experience & recommendations from amazing people on LinkedIn!
+
 [LinkedIn recommendations](https://www.linkedin.com/in/jadetrue/details/recommendations/?detailScreenTabIndex=0)
