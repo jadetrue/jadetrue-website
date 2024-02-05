@@ -22,23 +22,23 @@ I'm a creature of habit who thrives on a well-organized work routine. I firmly b
 
 But I have no regrets. I've had a lot of time to reflect on the situation. Could I have prevented it? Maybe.
 
-> 👩🏻‍🏫 **Lesson learned**: Ask about upcoming plans and set clear expectations for the role.
+> 👩🏻‍🏫 Lesson learned: Ask about upcoming plans and set clear expectations for the role.
 
 So, here I am, ready for a fresh start.
 
 ### What am I looking for?
 
-What's next? A new role that aligns with my values\* and allows me to make a real difference. I would love to grow with a company and be able to have the support of a team who can help me grow and develop personally whilst benefiting the company. I particular love working with JavaScript and am used to working in frameworks like React. I am a fairly quick at learning and picking things up, so I have been told, and would absolutely be up for working in similar frameworks.
+What's next? A new role that aligns with my values\* and allows me to make a real difference. I would love to grow with a company and be able to have the support of a team that can help me grow and develop personally whilst benefiting the company. I particularly love working with JavaScript and am used to working in frameworks like React. I am fairly quick at learning and picking things up, so I have been told, and would absolutely be up for working in similar frameworks.
 
-The ideal company for me would be a collaborative team that allows for personal growth and challenges. I enjoy working with a team where we can voice our thoughts and opinions whilst receiving constructive feedback on work produced.
+The ideal company for me would be a collaborative team that allows for personal growth and challenges. I enjoy working with a team where we can voice our thoughts and opinions whilst receiving constructive feedback on the work produced.
 
-I have a lot of enthusiasm to bring to my next role and would love to be given the chance to display this. 
+I have a lot of enthusiasm to bring to my next role and would love to be given the chance to display this.
 
 \*My values:
 
 - **Honesty** - I appreciate transparency and believe in being open and straightforward in my communication. It is essential to me to be able to build trust both personally and professionally.
-- **Authenticity** - I understand my strengths and weakness and will always be true to myself in what I am / am not capable of. Opening myself up to vulnerabilities and therefor new challenges.
-- **Passion** - Being passionate is and always be a top value of mine. I believe that having a passion for something will take you on a path that will bring fulfillment and purpose to ones life. Along with the passion, you have a drive that encourages me to put in the extra effort that's need to thrive.
+- **Authenticity** - I understand my strengths and weaknesses and will always be true to myself in what I am/am not capable of. Opening myself up to vulnerabilities and therefore new challenges.
+- **Passion** - Being passionate is and always be a top value of mine. I believe that having a passion for something will take you on a path that will bring fulfilment and purpose to your life. Along with the passion, you have a drive that encourages me to put in the extra effort that's needed to thrive.
 
 ### Why me?
 
@@ -50,7 +50,7 @@ Having 4+ years of experience as a Project Manager, I've always wanted to be a d
 
 - Passionate about all animals - especially dogs. I have a mini black and tan dachshund but have always dreamed of a rottweiler since I grew up with them in my family. 🐕
 - Creative, I enjoy coding and making things look appealing to users. I especially like hand-making cards for Birthdays / Christmas etc and appreciate the finer details. 🎨
-- I am a very career-driven individual, always looking for new challenges, and got into Frontend Development through self-learning. 💻
+- I am a very career-driven individual, always looking for new challenges, and got into Frontend Development through self-learning. 💻reer-driven individual, always looking for new challenges, and got into Frontend Development through self-learning. 💻
 
 If you'd like to know more, I am available for new opportunities immediately - please do check out the rest of my website and my experience & recommendations from amazing people on LinkedIn!
 
