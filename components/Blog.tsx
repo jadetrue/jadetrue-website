@@ -39,6 +39,7 @@ const Blog: React.FC<Props> = ({ data, showAllBlogs = false }) => {
                           src={imageUrl}
                           height={600}
                           width={1000}
+                          objectFit="cover"
                           className="rounded-lg"
                         />
                       )}
