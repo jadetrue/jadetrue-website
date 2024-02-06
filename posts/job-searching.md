@@ -50,7 +50,7 @@ Having 4+ years of experience as a Project Manager, I've always wanted to be a d
 
 - Passionate about all animals - especially dogs. I have a mini black and tan dachshund but have always dreamed of a rottweiler since I grew up with them in my family. 🐕
 - Creative, I enjoy coding and making things look appealing to users. I especially like hand-making cards for Birthdays / Christmas etc and appreciate the finer details. 🎨
-- I am a very career-driven individual, always looking for new challenges, and got into Frontend Development through self-learning. 💻reer-driven individual, always looking for new challenges, and got into Frontend Development through self-learning. 💻
+- I am a very career-driven individual, always looking for new challenges, and got into Frontend Development through self-learning. 💻
 
 If you'd like to know more, I am available for new opportunities immediately - please do check out the rest of my website and my experience & recommendations from amazing people on LinkedIn!
 
