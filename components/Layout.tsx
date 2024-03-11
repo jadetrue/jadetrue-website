@@ -30,9 +30,8 @@ export default function Layout({
 
   return (
     <div
-      className={`${
-        isDark ? "dark" : ""
-      } m-auto md:max-w-5xl md:h-screen dark:bg-primary w-full px-8 md:px-0`}
+      className={`${isDark ? "dark" : ""
+        } m-auto md:max-w-5xl md:h-screen dark:bg-primary w-full px-8 md:px-0`}
     >
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -62,10 +61,10 @@ export default function Layout({
           name="keywords"
           content="Front-end developer, Fullstack developer, React, TypeScript"
         />
-        <meta
+        {/* <meta
           property="og:image"
-          content="https://www.jadetrue.co.uk/preview.png"
-        />
+          content="<generated>"
+        /> */}
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
