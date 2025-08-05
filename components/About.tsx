@@ -34,7 +34,7 @@ const About = () => {
         <br />
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1KIsh7gE1qgu2PnQ6GH2_kiJlZUNpvMET/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1qSPOAu_tvpqcJ7O-Q9OqoBc6iuXpeYl3/view?usp=drive_link"
         >
           <Button>View CV 🔎</Button>
         </a>
