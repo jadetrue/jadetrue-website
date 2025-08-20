@@ -47,14 +47,12 @@ export default function Post({
           width={800}
           className="rounded-lg object-cover"
         />
-        <Body size="base" color="dark:text-secondary">
-          <div
-            className="pt-12 prose text-left lg:prose-xl"
-            dangerouslySetInnerHTML={{
-              __html: postData.contentHtml,
-            }}
-          />
-        </Body>
+        <div
+          className="pt-12 prose text-left lg:prose-xl dark:text-secondary"
+          dangerouslySetInnerHTML={{
+            __html: postData.contentHtml,
+          }}
+        />
       </article>
     </Layout>
   );

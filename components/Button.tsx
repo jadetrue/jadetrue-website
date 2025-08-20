@@ -3,33 +3,41 @@ import React from "react";
 import { Body } from "./Typography";
 
 export interface Props {
-    href?: string;
-    onClick?: (e?: any) => void;
-    styles?: string;
-    children?: React.ReactNode;
+  href?: string;
+  onClick?: (e?: any) => void;
+  styles?: string;
+  children?: React.ReactNode;
 }
 
 const Button: React.FC<Props> = ({ href, onClick, styles, children }) => {
-    if (href)
-        return (
-            <a
-                href={href}
-                target="_blank"
-                rel="noreferrer noopener"
-                className={`rounded flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
-            >
-                <Body color="text-secondary dark:text-primary">{children}</Body>
-            </a>
-        );
-
+  if (href)
     return (
-        <button
-            onClick={onClick}
-            className={`rounded flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
-        >
-            <Body color="text-secondary dark:text-primary">{children}</Body>
-        </button>
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer noopener"
+        className={`rounded flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
+      >
+        {typeof children === "string" ? (
+          <Body color="text-secondary dark:text-primary">{children}</Body>
+        ) : (
+          children
+        )}
+      </a>
     );
+
+  return (
+    <button
+      onClick={onClick}
+      className={`rounded flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
+    >
+      {typeof children === "string" ? (
+        <Body color="text-secondary dark:text-primary">{children}</Body>
+      ) : (
+        children
+      )}
+    </button>
+  );
 };
 
 export default Button;
