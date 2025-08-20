@@ -33,23 +33,21 @@ const Blog: React.FC<Props> = ({ data, showAllBlogs = false }) => {
                   className="flex flex-col transition duration-500 transform rounded-lg hover:scale-110 group"
                 >
                   <Link href={`/posts/${id}`}>
-                    <a>
-                      {imageUrl && (
-                        <Image
-                          src={imageUrl}
-                          alt={title}
-                          height={600}
-                          width={1000}
-                          className="rounded-lg object-cover"
-                        />
-                      )}
-                      <Body
-                        weight="font-normal"
-                        styles="p-3 transform group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-500 group-hover:bg-clip-text"
-                      >
-                        {title}
-                      </Body>
-                    </a>
+                    {imageUrl && (
+                      <Image
+                        src={imageUrl}
+                        alt={title}
+                        height={600}
+                        width={1000}
+                        className="rounded-lg object-cover"
+                      />
+                    )}
+                    <Body
+                      weight="font-normal"
+                      styles="p-3 transform group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-500 group-hover:bg-clip-text"
+                    >
+                      {title}
+                    </Body>
                   </Link>
                   <Date dateString={date} styles="px-3" />
                 </div>
