@@ -42,10 +42,10 @@ export default function Post({
         </div>
         <Image
           src={postData.imageUrl}
+          alt={postData.title}
           height={500}
           width={800}
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
         />
         <Body size="base" color="dark:text-secondary">
           <div
