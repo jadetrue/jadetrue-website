@@ -1,6 +1,11 @@
 import React from "react";
 import Icon from "./Icon";
 import { ExternalLink } from "./Typography";
+import {
+  faXTwitter,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 type Type = "horizontal" | "vertical";
 
@@ -17,13 +22,13 @@ const SocialIcons: React.FC<Props> = ({ type, styles }) => {
       } ${styles}`}
     >
       <ExternalLink url="https://www.linkedin.com/in/jadetrue/">
-        <Icon icon={["fab", "linkedin"]} styles="text-3xl" />
+        <Icon icon={faLinkedin} styles="text-3xl" />
       </ExternalLink>
       <ExternalLink url="https://github.com/jadetrue">
-        <Icon icon={["fab", "github"]} styles="text-3xl" />
+        <Icon icon={faGithub} styles="text-3xl" />
       </ExternalLink>
       <ExternalLink url="https://twitter.com/jadetrue_">
-        <Icon icon={["fab", "x-twitter"]} styles="text-3xl" />
+        <Icon icon={faXTwitter} styles="text-3xl" />
       </ExternalLink>
     </div>
   );

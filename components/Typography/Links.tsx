@@ -19,9 +19,13 @@ export const ExternalLink: React.FC<Props> = ({
   children,
 }) => (
   <a href={url} target="_blank" rel="noreferrer">
-    <Body size={size} weight={weight} color={color} styles={styles}>
-      {children}
-    </Body>
+    {typeof children === "string" ? (
+      <Body size={size} weight={weight} color={color} styles={styles}>
+        {children}
+      </Body>
+    ) : (
+      children
+    )}
   </a>
 );
 
@@ -34,8 +38,12 @@ export const InternalLink: React.FC<Props> = ({
   children,
 }) => (
   <Link href={url} scroll={true}>
-    <Body weight={weight} color={color} size={size} styles={styles}>
-      {children}
-    </Body>
+    {typeof children === "string" ? (
+      <Body weight={weight} color={color} size={size} styles={styles}>
+        {children}
+      </Body>
+    ) : (
+      children
+    )}
   </Link>
 );

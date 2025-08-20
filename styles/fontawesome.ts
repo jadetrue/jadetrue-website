@@ -1,33 +1,33 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
-    fab,
     faXTwitter,
-    faGithubAlt,
-    faLinkedinIn,
+    faGithub,
+    faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
-    fas,
     faAt,
     faMoon,
     faCircleHalfStroke,
     faDownload,
     faBars,
-    faClose,
+    faXmark,
     faQuoteLeft,
     faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faGithubAlt, faLinkedinIn, faXTwitter);
+// Add all icons to the library
 library.add(
-    fas,
+    faXTwitter,
+    faGithub,
+    faLinkedin,
     faAt,
     faMoon,
     faCircleHalfStroke,
     faDownload,
     faBars,
-    faClose,
+    faXmark,
     faQuoteLeft,
     faQuoteRight
 );
