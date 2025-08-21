@@ -1,13 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @font-face {
-    font-family: "Gistesy";
-    src: url("../assets/gistesy/Gistesy.ttf");
+  font-family: "Gistesy";
+  src: url("/fonts/Gistesy.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 .full-bleed {
-    box-shadow: 0 0 0 100vmax #1c2120;
-    clip-path: inset(0 -100vmax);
+  box-shadow: 0 0 0 100vmax #1c2120;
+  clip-path: inset(0 -100vmax);
+}
+
+/* Force Gistesy on display elements - needed for Tailwind v4 */
+.font-display {
+  font-family: "Gistesy", serif !important;
 }
