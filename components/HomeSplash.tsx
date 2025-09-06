@@ -24,9 +24,23 @@ const HomeSplash = () => {
           Primarily working with React, NextJS, TypeScript and Tailwind CSS to
           build beautiful things. ✨
         </Body>
-        <a href="mailto:info@jadetrue.co.uk?subject=What%20did%20you%20think%3F&body=Hey%20Jade%2C%0D%0A%0D%0AI%20stumbled%20upon%20your%20website%20and%20just%20wanted%20to%20say...">
+
+        <Button
+          onClick={() => {
+            const email = "info@jadetrue.co.uk";
+            const subject = "What did you think?";
+            const body =
+              "Hey Jade,\n\nI stumbled upon your website and just wanted to say...";
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(body)}`;
+          }}
+        >
+          Say hi 👋🏻
+        </Button>
+        {/* <a href="mailto:info@jadetrue.co.uk?subject=What%20did%20you%20think%3F&body=Hey%20Jade%2C%0D%0A%0D%0AI%20stumbled%20upon%20your%20website%20and%20just%20wanted%20to%20say...">
           <Button>Say hi 👋🏻</Button>
-        </a>
+        </a> */}
       </div>
       <div className="mt-16 md:mt-0">
         <Image

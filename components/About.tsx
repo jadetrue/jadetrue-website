@@ -9,7 +9,7 @@ const About = () => {
       <div className="w-full my-24 md:text-center flex flex-col place-items-center">
         <Body>
           Unleashing{" "}
-          <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">
+          <span className="text-transparent bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text">
             creativity
           </span>{" "}
           through lines of code.

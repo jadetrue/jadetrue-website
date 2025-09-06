@@ -16,7 +16,7 @@ const Button: React.FC<Props> = ({ href, onClick, styles, children }) => {
         href={href}
         target="_blank"
         rel="noreferrer noopener"
-        className={`rounded flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
+        className={`rounded-sm flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
       >
         {typeof children === "string" ? (
           <Body color="text-secondary dark:text-primary">{children}</Body>
@@ -29,7 +29,7 @@ const Button: React.FC<Props> = ({ href, onClick, styles, children }) => {
   return (
     <button
       onClick={onClick}
-      className={`rounded flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
+      className={`rounded-sm flex flex-row items-center p-2 px-6 bg-primary dark:bg-secondary w-fit ${styles}`}
     >
       {typeof children === "string" ? (
         <Body color="text-secondary dark:text-primary">{children}</Body>

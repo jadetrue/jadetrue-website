@@ -44,7 +44,7 @@ const Blog: React.FC<Props> = ({ data, showAllBlogs = false }) => {
                     )}
                     <Body
                       weight="font-normal"
-                      styles="p-3 transform group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-500 group-hover:bg-clip-text"
+                      styles="p-3 transform group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-cyan-500 group-hover:to-blue-500 group-hover:bg-clip-text"
                     >
                       {title}
                     </Body>
