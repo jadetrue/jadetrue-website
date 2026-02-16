@@ -2,6 +2,8 @@
 title: "2024 | Job search"
 date: "2024-02-05"
 imageUrl: "/blog-images/feb-2024.jpg"
+excerpt: "My career background, what I'm looking for in a role, and the values that drive me as a developer."
+tags: ["career", "personal"]
 ---
 
 Hey!

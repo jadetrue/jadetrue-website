@@ -2,6 +2,8 @@
 title: "Skydive | Thank you"
 date: "2022-10-15"
 imageUrl: "/blog-images/thank-you.jpg"
+excerpt: "Jumping from 15,000 feet and raising £1,385 for charity — a huge thank you to everyone who donated."
+tags: ["charity", "personal"]
 ---
 
 So, a couple of weeks ago, as you may have already read, my partner and I jumped out of a plane to raise money for an amazing charity: [Alzheimer's Support](https://www.justgiving.com/alzheimerssupport). The total between us came to **£1,385** which is incredible.

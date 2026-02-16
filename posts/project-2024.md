@@ -2,6 +2,8 @@
 title: '2024 | Calorie calculator for women'
 date: '2024-08-31'
 imageUrl: '/blog-images/twwc.png'
+excerpt: 'Building a calorie calculator with NextJS for The Women''s Wellbeing Club, designed specifically for women''s nutritional needs.'
+tags: ['project', 'dev']
 ---
 
 Hey!

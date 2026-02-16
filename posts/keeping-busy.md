@@ -2,6 +2,8 @@
 title: "2024 | Quick life update ✨"
 date: "2024-03-11"
 imageUrl: "/blog-images/clevedon.jpg"
+excerpt: "Staying productive while job searching — meetups, Frontend Mentor challenges, gym routine, and family time."
+tags: ["personal", "career"]
 ---
 
 Hey!

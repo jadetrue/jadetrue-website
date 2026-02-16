@@ -2,6 +2,8 @@
 title: "Skydive | Charity"
 date: "2022-09-25"
 imageUrl: "/blog-images/skydive-september-2022.jpg"
+excerpt: "Skydiving for Alzheimer's Support Wiltshire — raising nearly £1,000 with my partner Paul."
+tags: ["charity", "personal"]
 ---
 
 On Sunday 25th September, my partner and I jumped out of a perfectly good plane to raise money for [Alzheimer's Support Wiltshire](https://www.alzheimerswiltshire.org.uk/). In total, we raise just under £1,000 for this amazing charity and I'd love to do it all over again!

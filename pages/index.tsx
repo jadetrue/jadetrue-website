@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Layout, { siteTitle } from "../components/Layout";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPostsData, Post } from "../lib/posts";
 import { GetStaticProps } from "next";
 import HomeSplash from "../components/HomeSplash";
 import About from "../components/About";
@@ -13,12 +13,7 @@ import { Advice } from "../models/Advice";
 export default function Home({
     allPostsData,
 }: {
-    allPostsData: {
-        date: string;
-        title: string;
-        id: string;
-        imageUrl: string;
-    }[];
+    allPostsData: Post[];
 }) {
     const [advice, setAdvice] = useState<Advice>({ id: "", advice: "" });
 

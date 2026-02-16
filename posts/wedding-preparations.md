@@ -2,6 +2,8 @@
 title: "Preparing for my wedding"
 date: "2022-12-17"
 imageUrl: "/blog-images/wedding-preparations.jpg"
+excerpt: "How Paul and I met, our engagement in Bristol, and the wedding planning journey so far."
+tags: ["personal"]
 ---
 
 In exactly, one year from the date of this blog, I'll be getting married to my better half 👩🏻‍❤️‍💋‍👨🏻✨.

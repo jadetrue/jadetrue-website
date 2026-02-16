@@ -2,6 +2,8 @@
 title: "2024 | Reflecting on the past year"
 date: "2024-01-26"
 imageUrl: "/blog-images/wedding-day-bow.jpg"
+excerpt: "Looking back on 2023 — joining the gym, hiring a personal trainer, a career change, and our wedding day."
+tags: ["personal", "fitness"]
 ---
 
 Hey 👋🏻

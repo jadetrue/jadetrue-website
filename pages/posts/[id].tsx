@@ -1,22 +1,18 @@
 import Layout from "../../components/Layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllPostIds, getPostData, PostData } from "../../lib/posts";
 import Head from "next/head";
-import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Image from "next/image";
-import { Body, Header } from "../../components/Typography";
+import { Header } from "../../components/Typography";
+import BlogMeta from "../../components/BlogMeta";
+import TagPill from "../../components/TagPill";
 import lengthToMinutes from "../../services/lengthToMinutes";
 
-export default function Post({
-  postData,
-}: {
-  postData: {
-    title: string;
-    date: string;
-    contentHtml: string;
-    imageUrl: string;
-  };
-}) {
+interface Props {
+  postData: PostData;
+}
+
+export default function Post({ postData }: Props) {
   return (
     <Layout>
       <Head>
@@ -27,28 +23,33 @@ export default function Post({
           content={`https://www.jadetrue.co.uk/${postData.imageUrl}`}
         />
       </Head>
-      <article className="flex flex-col items-center w-full p-2 pb-12 m-auto text-center">
-        <div className="flex flex-col items-center justify-center w-full">
-          <Header styles="pt-12 tracking-wider leading-relaxed md:leading-none">
-            {postData.title}
-          </Header>
-          <Date
-            dateString={postData.date}
-            styles="px-3 pt-3 dark:text-secondary"
-          />
-          <Body size="extra-small" styles="pb-12">
-            {`${lengthToMinutes(postData.contentHtml.length || 100)}`}
-          </Body>
+      <article className="mx-auto flex w-full max-w-3xl flex-col items-center px-4 pb-16 pt-8">
+        <Header styles="text-center tracking-wider leading-relaxed md:leading-none">
+          {postData.title}
+        </Header>
+
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+          {postData.tags?.map((tag) => (
+            <TagPill key={tag} tag={tag} />
+          ))}
         </div>
+
+        <BlogMeta
+          dateString={postData.date}
+          readingTime={lengthToMinutes(postData.contentHtml.length || 100)}
+          styles="mt-3"
+        />
+
         <Image
           src={postData.imageUrl}
           alt={postData.title}
           height={500}
           width={800}
-          className="rounded-lg object-cover"
+          className="mt-8 rounded-lg object-cover"
         />
+
         <div
-          className="pt-12 prose text-left lg:prose-xl dark:text-secondary"
+          className="mt-10 w-full prose text-left lg:prose-xl dark:text-secondary"
           dangerouslySetInnerHTML={{
             __html: postData.contentHtml,
           }}

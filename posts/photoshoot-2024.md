@@ -2,6 +2,8 @@
 title: '2024 | Summer Photoshoot Prep'
 date: '2024-06-29'
 imageUrl: '/blog-images/photoshoot.jpg'
+excerpt: 'My training routine, meal plan, and daily schedule in the lead-up to summer photoshoots.'
+tags: ['fitness', 'personal']
 ---
 
 Hey everyone!

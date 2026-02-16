@@ -1,7 +1,9 @@
 ---
 title: "Carbon Hack | Green Webhook"
-date: "2022-11-10 "
+date: "2022-11-10"
 imageUrl: "/blog-images/carbon-hack-22.png"
+excerpt: "Our CarbonHack22 hackathon entry — Green Webhook, a tool to reduce carbon emissions by routing workloads intelligently."
+tags: ["dev", "events"]
 ---
 
 > 400 developers joined [#CarbonHack22](https://twitter.com/hashtag/CarbonHack22?src=hashtag_click) to build the best carbon-aware application for a chance to win 40K USD.

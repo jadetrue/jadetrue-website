@@ -2,6 +2,8 @@
 title: "How I got where I am today"
 date: "2022-04-13"
 imageUrl: "/blog-images/how-i-got-where-i-am-today.jpeg"
+excerpt: "My journey from IT apprentice and project manager to front-end developer."
+tags: ["career", "personal"]
 ---
 
 Hey, my name is Jade and I have 4+ years of work experience as a **Project Manager** and now almost a 1 year, professionally, as a **Front-end Developer** for an awesome startup called Loopin 🦉

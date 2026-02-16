@@ -2,6 +2,8 @@
 title: "2024 | Active April"
 date: "2024-04-18"
 imageUrl: "/blog-images/active_april.jpg"
+excerpt: "A busy month of desk work and attending Southwest.js, covering sustainability and accessibility in tech."
+tags: ["events", "dev"]
 ---
 
 Hello! 👋🏻

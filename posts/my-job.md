@@ -2,6 +2,8 @@
 title: "2024 | Frontend Developer"
 date: "2024-05-24"
 imageUrl: "/blog-images/laptop-setup.jpg"
+excerpt: "What it means to be a frontend developer, tips for aspiring devs, and how to overcome challenges in your career."
+tags: ["career", "dev"]
 ---
 
 Hey!
