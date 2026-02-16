@@ -37,3 +37,14 @@
 .font-display {
   font-family: "Gistesy", serif !important;
 }
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
